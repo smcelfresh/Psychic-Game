@@ -5,13 +5,13 @@ var alphaChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 	var winCounter = 0;
 	var lossCounter = 0; 
 	var guessesleft = 9;
-	var guessessofar = event; // need to get this to add each character pressed
+	var guessessofar = event; // get this to add each character each time a key is pressed
 
 //create a document.onkeyup event listener function when user presses a key
-	document.onkeyup = function(event) {
+		document.onkeyup = function(event) {
 		var userSelection = event.key;
-		document.getElementById("guessessofar").innerHTML = userSelection;
-		console.log();
+		document.getElementById("guessessofar").innerHTML = userSelection;		var userSelection = event.key;
+			console.log();
 
 //create random generator for computer's choice
 
@@ -25,5 +25,6 @@ var alphaChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 		document.getElementById("guessesleft").innerHTML = guessesleft--;
 		document.getElementById("lossCounter").innerHTML = lossCounter++;
 	}
-}
+}	
+
 
